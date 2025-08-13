@@ -7,9 +7,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
-  <body>
+  <body class="bg-base-300">
     <header class="navbar bg-neutral text-neutral-content shadow-sm fixed z-50">
       <div class="navbar-start justify-center">
         <div class="dropdown">
@@ -42,27 +43,158 @@
       </div>
     </header>
 
-    <section class="flex justify-center items-center h-screen">
-      <div class="card card-side bg-base-300 shadow-lg h-80">
-        <figure>
-          <img src="renato.jpg" alt="Eu" />
-        </figure>
+    <section class="flex flex-col justify-center items-center mb-20">
+      <div class="flex justify-center items-center h-screen">
+        <div class="card card-side bg-white shadow-xl h-80">
+          <figure>
+            <img src="images/renato.jpg" alt="Eu" />
+          </figure>
 
-        <div class="card-body items-center text-center">
-          <h2 class="card-title text-4xl">Olá, sou o Renato Hernandez</h2>
-          <p class="text-xl">Desenvolvedor Full Stack | Ruby on Rails</p>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-4xl">Olá, sou o Renato Hernandez</h2>
+            <p class="text-xl">Desenvolvedor Full Stack | Ruby on Rails</p>
 
-          <p>
-            <div class="grid grid-flow-col gap-5 -mt-20">
-              <a href="https://github.com/renatolhernandez2017"><i class="fa fa-github" style="font-size: 50px"></i></a>
-              <a href="https://www.linkedin.com/in/renato-hernandez-1b947910b/"><i class="fa fa-linkedin-square" style="font-size: 50px"></i></a>
-              <a href="https://wa.me/5511962985731"><i class="fa fa-whatsapp" style="font-size: 50px"></i></a>
-              <a href="mailto:renatolhernandez@gmail.com"><i class="fa fa-envelope" style="font-size: 50px"></i></a>
+            <p>
+              <div class="grid grid-flow-col gap-5 -mt-20">
+                <a href="https://github.com/renatolhernandez2017"><i class="fa fa-github" style="font-size: 50px"></i></a>
+                <a href="https://www.linkedin.com/in/renato-hernandez-1b947910b/"><i class="fa fa-linkedin-square" style="font-size: 50px"></i></a>
+                <a href="https://wa.me/5511962985731"><i class="fa fa-whatsapp" style="font-size: 50px"></i></a>
+                <a href="mailto:renatolhernandez@gmail.com"><i class="fa fa-envelope" style="font-size: 50px"></i></a>
+              </div>
+            </p>
+
+            <div class="card-actions justify-end">
+              <button type="submit" class="btn bg-success text-white">Fale comigo</button>
             </div>
-          </p>
+          </div>
+        </div>
+      </div>
 
-          <div class="card-actions justify-end">
-            <button type="submit" class="btn bg-success text-white">Fale comigo</button>
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="text-4xl mb-4 text-center font-bold">Sobre Mim</h2>
+
+        <div class="grid grid-cols-12 gap-5">
+          <ul class="col-start-3 col-end-8 list bg-white rounded-box shadow-xl p-4 overflow-x-auto h-[30rem]">
+            <li class="text-2xl text-center font-bold tracking-wide my-2">
+              Experiências Profissionais
+            </li>
+            
+            <li class="list-row items-center">
+              <div class="text-4xl font-thin opacity-30 tabular-nums">1</div>
+
+              <div class="list-col-grow">
+                <h2 class="font-bold text-lg">Desenvolvedor Full Stack Ruby — Projeto ESG</h2>
+                <h3>Construção de API RESTful com autenticação JWT, dashboards interativos e controle de indicadores GRI/ODS usando Rails e React.</h3>
+                <h4 class="my-2">Maio 2025 – Atual</h4>
+              </div>
+            </li>
+            
+            <li class="list-row items-center">
+              <div class="text-4xl font-thin opacity-30 tabular-nums">2</div>
+
+              <div class="list-col-grow">
+                <h2 class="font-bold text-lg">Desenvolvedor Full Stack Ruby — Softex PE</h2>
+                <h3>Aplicação full-stack com Hotwire e API Rails, testes com RSpec, autenticação segura e experiência em tempo real com Turbo.</h3>
+                <h4 class="my-2">Fev 2024 – Abr 2025</h4>
+              </div>
+            </li>
+          
+            <li class="list-row items-center">
+              <div class="text-4xl font-thin opacity-30 tabular-nums">3</div>
+
+              <div class="list-col-grow">
+                <h2 class="font-bold text-lg">Suporte em Informática — TRE-PE</h2>
+                <h3>Manutenção de estações Linux/Windows, monitoramento de rede e documentação técnica em ambiente público.</h3>
+                <h4 class="my-2">Mar 2023 – Dez 2023</h4>
+              </div>
+            </li>
+
+            <li class="list-row items-center">
+              <div class="text-4xl font-thin opacity-30 tabular-nums">4</div>
+
+              <div class="list-col-grow">
+                <h2 class="font-bold text-lg">Trainee Java Developer — BRX Retail</h2>
+                <h3>Aprendizado acelerado em Oracle APEX e PL/SQL, com foco em queries otimizadas e participação em reuniões técnicas.</h3>
+                <h4 class="my-2">Ago 2022 – Fev 2023</h4>
+              </div>
+            </li>
+
+            <li class="list-row items-center">
+              <div class="text-4xl font-thin opacity-30 tabular-nums">5</div>
+
+              <div class="list-col-grow">
+                <h2 class="font-bold text-lg">Desenvolvedor Full Stack — SiDi</h2>
+                <h3>App desktop com C# e UWP, consumo da PokéAPI e persistência local com NoSQL, priorizando UX e desempenho.</h3>
+                <h4 class="my-2">Out 2021 – Jun 2022</h4>
+              </div>
+            </li>
+          </ul>
+
+          <div class="col-start-8 col-end-12 flex flex-col gap-2">
+            <div class="list bg-white rounded-box shadow-xl p-4 h-full">
+              Desenvolvedor de software com foco na construção de aplicações web completas,
+              utilizando Ruby on Rails no backend. Para criar soluções robustas e
+              entregar valor real aos projetos, também possuo conhecimento prático em tecnologias
+              frontend como React.js, JavaScript, HTML e CSS.
+              Com formação em Ciência da Computação e experiência com APIs,
+              TDD e banco de dados como PostgreSQL, valorizo a escrita de código limpo,
+              a colaboração em equipe e a entrega de produtos de alta qualidade.
+            </div>
+
+            <ul class="list bg-white rounded-box shadow-xl p-4 h-full">
+              <li class="list-row items-center">
+                <div class="list-col-grow">
+                  <h2 class="text-2xl font-bold tracking-wide mb-2">Formação Acadêmica</h2>
+                  <h3 class="font-semibold">Bacharel em Ciência da Computação</h3>
+                  <h4 class="my-2 font-thin">Universidade Nove de Julho (UNINOVE)</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center items-center h-screen">
+        <h2 class="text-4xl mb-4 text-center font-bold">Habilidades Técnicas</h2>
+
+        <div class="col-start-3 col-end-9 flex gap-5">
+          <div class="card bg-base-100 w-96 shadow-sm">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Frontend</h2>
+              <hr class="border-t border-gray-200 w-full my-2" />
+
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-96 shadow-sm">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Backend</h2>
+              <hr class="border-t border-gray-200 w-full my-2" />
+
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-96 shadow-sm">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Banco de Dados</h2>
+              <hr class="border-t border-gray-200 w-full my-2" />
+
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,6 +202,7 @@
 
     <footer class="footer footer-horizontal footer-center bg-neutral text-base-content rounded p-10 text-white">
       <h2 class="text-xl">Vamos conversar!</h2>
+
       <h3 class="text-base">
         <p>Estou sempre disposto a conhecer novas possibilidades e parcerias.</p>
         <p>Fique à vontade para me mandar uma mensagem!</p>
@@ -77,10 +210,21 @@
       </h3>
 
       <nav class="grid grid-flow-col gap-5">
-        <a href="https://github.com/renatolhernandez2017"><i class="fa fa-github" style="font-size: 40px"></i></a>
-        <a href="https://www.linkedin.com/in/renato-hernandez-1b947910b/"><i class="fa fa-linkedin-square" style="font-size: 40px"></i></a>
-        <a href="https://wa.me/5511962985731"><i class="fa fa-whatsapp" style="font-size: 40px"></i></a>
-        <a href="mailto:renatolhernandez@gmail.com"><i class="fa fa-envelope" style="font-size: 40px"></i></a>
+        <a href="https://github.com/renatolhernandez2017">
+          <i class="fa fa-github" style="font-size: 40px"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/renato-hernandez-1b947910b/">
+          <i class="fa fa-linkedin-square" style="font-size: 40px"></i>
+        </a>
+
+        <a href="https://wa.me/5511962985731">
+          <i class="fa fa-whatsapp" style="font-size: 40px"></i>
+        </a>
+
+        <a href="mailto:renatolhernandez@gmail.com">
+          <i class="fa fa-envelope" style="font-size: 40px"></i>
+        </a>
       </nav>
 
       <aside>
