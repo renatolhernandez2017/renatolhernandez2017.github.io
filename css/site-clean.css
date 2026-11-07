@@ -1,0 +1,48 @@
+/* Visual unificado ao Workspace: interface pública clara e acessível. */
+:root{color-scheme:light;--bg:#f5f7fb;--panel:#fff;--panel-raised:#fff;--text:#14243b;--muted:#62748e;--blue:#2563eb;--border:#e2e8f2;--glow:#2563eb}
+body{background:#f5f7fb;color:var(--text);line-height:1.65}
+header{background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--border);backdrop-filter:blur(14px)}
+.brand{color:#13253d!important}.brand span{color:#2563eb!important}
+.navlinks a:not(.btn){color:#465875!important}.navlinks a:not(.btn):hover{color:#2563eb!important}
+.btn{background:#2563eb!important;color:#fff!important;border:1px solid #2563eb!important;box-shadow:0 6px 16px #2563eb22;border-radius:11px!important}
+.btn:hover{background:#1d4ed8!important;transform:translateY(-1px)}
+.btn.secondary{background:#fff!important;color:#24466d!important;border:1px solid #d9e2f0!important;box-shadow:none}
+.btn.secondary:hover{background:#f0f5ff!important}
+.hero{background:radial-gradient(circle at 85% 10%,#e6efff,transparent 45%),linear-gradient(180deg,#fff,#f5f7fb)!important;border-bottom:1px solid var(--border)}
+.hero::after{display:none!important}.hero h1,.section h2{color:#14243b}.hero h1 span{color:#2563eb!important}
+.eyebrow{color:#2563eb!important}.lead,.intro,.small,.card p,.footer,.section p{color:#62748e}
+.section{background:#fff}.section.alt{background:#f5f7fb!important}
+.card,.lead-form{background:#fff!important;border:1px solid #e2e8f2!important;box-shadow:0 10px 30px #1d35550b;border-radius:18px!important;color:#14243b}
+.card:hover{box-shadow:0 18px 40px #1d355514;transform:translateY(-3px)}
+.card h3,.lead-form h3{color:#14243b}.tag{background:#edf4ff!important;border:1px solid #d8e7ff!important;color:#26578f!important}
+.portrait{border:7px solid #fff;box-shadow:0 22px 55px #233e6228}
+.lead-form input:not([type=checkbox]),.lead-form select,.lead-form textarea{background:#fff!important;color:#14243b!important;border:1px solid #d6dfec!important;border-radius:10px!important}
+.lead-form label{color:#304563!important}.lead-form input:focus,.lead-form textarea:focus{border-color:#2563eb!important}
+.footer{background:#fff!important;border-top:1px solid var(--border)!important;color:#62748e}
+#dynamic-projects .project{overflow:hidden;display:flex;flex-direction:column;gap:9px}
+#dynamic-projects .project img{border-radius:12px!important;margin:0 0 6px!important}
+#dynamic-projects .project .link{display:inline-flex;margin-top:auto;color:#2563eb;font-weight:700;text-decoration:none}
+#dynamic-projects .project .link:hover{text-decoration:underline}
+#projetos .small a{color:#2563eb!important}
+.project-shell{width:min(1120px,calc(100% - 40px));margin:0 auto;padding:48px 0 100px}
+.project-back{display:inline-flex;color:#2563eb;font-weight:650;margin-bottom:28px}
+.project-panel{background:#fff;border:1px solid #e2e8f2;border-radius:22px;padding:clamp(24px,5vw,60px);box-shadow:0 15px 50px #14243b0b}
+.project-panel h1{font-size:clamp(2.3rem,5vw,4rem);line-height:1.1;letter-spacing:-.04em;margin:8px 0 25px;color:#14243b}
+.project-panel h2{margin-top:42px;color:#14243b}.project-panel p{max-width:780px;color:#52657f;font-size:1.08rem;white-space:pre-line}
+.project-panel #cover{width:100%;max-height:550px;object-fit:contain;background:#f2f5fa;border:1px solid #e2e8f2;border-radius:16px;margin:12px 0 30px}
+.project-panel .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.project-panel .gallery img{width:100%;height:240px;object-fit:cover;border-radius:12px;border:1px solid #e2e8f2}
+.project-panel a{color:#2563eb}
+@media(max-width:720px){.project-shell{padding-top:28px}.project-panel{border-radius:16px}.hero{padding-top:48px}.navlinks{gap:10px}}
+
+/* V5: área de contato coerente com a identidade clean */
+#contato.section.alt{background:#f3f6fb!important;color:#172b45!important}
+#contato .contact{background:#fff!important;border:1px solid #e1e8f3!important;box-shadow:0 12px 40px rgba(21,42,75,.06)!important;color:#172b45!important}
+#contato .contact h2,#contato .contact h3{color:#172b45!important}
+#contato .contact p,#contato .contact .small{color:#5d708a!important}
+#contato .eyebrow{color:#2563eb!important}
+#contato .lead-form{background:#f8faff!important;border:1px solid #e2e8f2!important;border-radius:18px!important;padding:26px!important;max-width:none!important}
+#contato .lead-form label{color:#263b57!important}
+#contato .lead-form input:not([type=checkbox]),#contato .lead-form select,#contato .lead-form textarea{background:#fff!important;color:#172b45!important;border:1px solid #cdd9e9!important;border-radius:10px!important}
+#contato .btn.secondary{background:#edf3ff!important;color:#2054a3!important;border-color:#d2e1fb!important}
+@media(max-width:600px){#contato .contact{padding:24px!important}#contato .lead-form{padding:18px!important}}
