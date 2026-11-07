@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#080d18">
+  <title>Admin | Renato Hernandez</title>
+  <link rel="stylesheet" href="css/modern.css">
+</head>
+<body>
+  <main>
+    <header class="admin-head">
+      <div>
+        <a href="./">← Voltar ao portfólio</a>
+        <div class="eyebrow">WORKSPACE / CRM</div>
+        <h1>Painel administrativo</h1>
+        <p>Gerencie seus projetos, oportunidades e clientes em um só lugar.</p>
+      </div>
+      <span class="admin-chip">● Ambiente de gestão</span>
+    </header>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <section id="setup" class="panel" hidden>
+      Configure <code>js/config.js</code> com a URL e a chave pública do Supabase.
+    </section>
+
+    <section id="login" class="panel" hidden>
+      <div class="eyebrow">ACESSO RESTRITO</div>
+      <h2>Bem-vindo de volta</h2>
+      <form id="login-form">
+        <label>
+          E-mail
+          <input type="email" name="email" autocomplete="username" required>
+        </label>
+        <label>
+          Senha
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit">Entrar no painel</button>
+      </form>
+    </section>
+
+    <section id="app" hidden>
+      <div class="actions">
+        <button id="logout" class="secondary" type="button">Sair</button>
+      </div>
+
+      <section class="panel resume-panel">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">ARQUIVOS</div>
+            <h2>Currículo profissional</h2>
+            <p>Atualize o PDF disponível no seu portfólio.</p>
+          </div>
+          <span class="panel-icon" aria-hidden="true">↗</span>
+        </div>
+        <p id="resume-current"></p>
+        <input id="resume-file" type="file" accept="application/pdf">
+        <div class="actions">
+          <button id="resume-upload" type="button">Atualizar currículo PDF</button>
+        </div>
+      </section>
+
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">GESTÃO</div>
+          <h2>Seus registros</h2>
+        </div>
+      </div>
+      <div class="tabs" id="tabs" role="tablist"></div>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">EDITOR</div>
+            <h2 id="form-title">Novo registro</h2>
+          </div>
+        </div>
+        <form id="record-form">
+          <div class="grid" id="fields"></div>
+          <div class="actions">
+            <button type="submit">Salvar</button>
+            <button type="button" class="secondary" id="cancel">Limpar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">LISTAGEM</div>
+            <h2>Registros cadastrados</h2>
+          </div>
+        </div>
+        <div id="records"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
