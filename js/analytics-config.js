@@ -1,0 +1,2 @@
+
+window.PORTFOLIO_GA4_ID = 'G-SCXQVKE5EV';
