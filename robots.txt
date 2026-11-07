@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://renatolhernandez2017.github.io/sitemap.xml
