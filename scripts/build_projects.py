@@ -16,7 +16,7 @@ if not isinstance(projects,list):sys.exit('Resposta inesperada')
 # No destructive cleanup unless data retrieval succeeded.
 folder=ROOT/'projetos';folder.mkdir(exist_ok=True)
 for f in folder.glob('*.html'):f.unlink()
-urls=[BASE,BASE+'privacidade.html']
+urls=[BASE,BASE+'privacidade.html'] + [BASE+'servicos/'+f.name for f in sorted((ROOT/'servicos').glob('*.html'))]
 links=[]
 for x in projects:
  slug=str(x.get('slug') or '').strip().lower()
@@ -52,4 +52,4 @@ idx.write_text(markup)
 from xml.sax.saxutils import escape
 xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+escape(u)+'</loc></url>\n' for u in urls)+'</urlset>\n'
 (ROOT/'sitemap.xml').write_text(xml)
-print('Geradas',len(urls)-1,'páginas de projeto e sitemap.')
+print('Geradas',len(links),'páginas de projeto e sitemap com serviços.')

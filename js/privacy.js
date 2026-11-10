@@ -6,7 +6,7 @@
   let activated = false;
   const getChoice = () => { try { const v = localStorage.getItem(KEY); return v === 'accepted' || v === 'rejected' ? v : null; } catch (_) { return null; } };
   const saveChoice = (value) => { try { localStorage.setItem(KEY, value); } catch (_) {} };
-  const privacyHref = document.currentScript?.src?.includes('/js/') && location.pathname.includes('/projetos/') ? '../privacidade.html' : (location.pathname.includes('/projetos/') ? '../privacidade.html' : 'privacidade.html');
+  const privacyHref = document.currentScript?.src?.includes('/js/') && (/\/(?:projetos|servicos)\//.test(location.pathname)) ? '../privacidade.html' : ((/\/(?:projetos|servicos)\//.test(location.pathname)) ? '../privacidade.html' : 'privacidade.html');
   function activate() {
     if (activated || !validID) return;
     activated = true;
@@ -39,7 +39,7 @@
     // ou ser excluídos nas configurações do navegador.
   }
   const style = document.createElement('link');
-  style.rel = 'stylesheet'; style.href = location.pathname.includes('/projetos/') ? '../css/privacy.css' : 'css/privacy.css';
+  style.rel = 'stylesheet'; style.href = (/\/(?:projetos|servicos)\//.test(location.pathname)) ? '../css/privacy.css' : 'css/privacy.css';
   document.head.appendChild(style);
   function draw() {
     const panel = document.createElement('section');

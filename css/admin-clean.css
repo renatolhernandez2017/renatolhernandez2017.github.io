@@ -7,3 +7,10 @@
 #login:not([hidden]) input{width:100%;margin-top:6px}
 
 .settings-divider{border:0;border-top:1px solid #e2e8f0;margin:30px 0}.photo-preview{width:132px;height:132px;object-fit:cover;border-radius:20px;border:1px solid #dbe4f0;display:block;margin:12px 0}#photo-file{display:block;margin:12px 0}
+
+/* Ajuste de profundidade da paleta existente, sem mudar a estrutura do painel. */
+:root{color:#10233c;background:#e9eef6}
+body,.workspace{background:#e9eef6;color:#10233c}
+.sidebar{background:#edf2f9;border-right-color:#c4d1e1}
+.brand{color:#10233c}.brand-mark{background:#174db5}
+.nav-link{color:#405775}.nav-link:hover{background:#dce7f7;color:#173e7c}

@@ -46,3 +46,24 @@ header{background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--
 #contato .lead-form input:not([type=checkbox]),#contato .lead-form select,#contato .lead-form textarea{background:#fff!important;color:#172b45!important;border:1px solid #cdd9e9!important;border-radius:10px!important}
 #contato .btn.secondary{background:#edf3ff!important;color:#2054a3!important;border-color:#d2e1fb!important}
 @media(max-width:600px){#contato .contact{padding:24px!important}#contato .lead-form{padding:18px!important}}
+
+/* Paleta refinada: mantém o azul e a identidade clara, com tons mais profundos. */
+:root{color-scheme:light;--bg:#e9eef6;--panel:#f8faff;--panel-raised:#f8faff;--text:#10233c;--muted:#455c79;--blue:#174db5;--border:#c5d1e2;--glow:#174db5}
+body{background:#e9eef6;color:var(--text)}
+header{background:rgba(239,244,251,.96)!important;border-bottom-color:#b8c8dd}
+.brand,.hero h1,.section h2,.card h3{color:#10233c!important}
+.navlinks a:not(.btn){color:#344e70!important}
+.btn{background:#174db5!important;border-color:#174db5!important;box-shadow:0 6px 18px #123d8a26}
+.btn:hover{background:#103d97!important}
+.btn.secondary{background:#edf2fa!important;color:#173c70!important;border-color:#aebfd6!important}
+.btn.secondary:hover{background:#dce8f8!important}
+.hero{background:radial-gradient(circle at 85% 10%,#d5e3f7,transparent 45%),linear-gradient(180deg,#f1f5fb,#e9eef6)!important}
+.hero h1 span,.eyebrow{color:#174db5!important}
+.lead,.intro,.small,.card p,.footer,.section p{color:#455c79}
+.section{background:#f3f6fb}.section.alt{background:#e9eef6!important}
+.card,.lead-form{background:#f8faff!important;border-color:#c5d1e2!important;box-shadow:0 10px 30px #112c4b12;color:#10233c}
+.tag{background:#dce8f8!important;border-color:#b7cde9!important;color:#174477!important}
+.lead-form input:not([type=checkbox]),.lead-form select,.lead-form textarea{background:#fff!important;color:#10233c!important;border-color:#b7c7da!important}
+.footer{background:#edf2f9!important;border-color:#c5d1e2!important}
+/* Páginas de serviços */
+.service-page{padding:64px 0 90px}.service-page h1{font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.14;letter-spacing:-.035em;max-width:850px}.service-page .lead{max-width:850px}.service-page .grid{margin:36px 0}.service-page .service-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.service-page .service-links a{color:#174db5;text-decoration:underline;text-underline-offset:3px}.service-page .card{height:100%}.service-page .contact{margin-top:48px}.service-page .contact p{color:#dce9fb}.service-page .contact h2{color:#fff}.service-page .tag{margin-right:6px}
